@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11"
+    "react-magic-move": "^0.1.0",
+    "react-scripts": "1.0.11",
+    "shufflejs": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
