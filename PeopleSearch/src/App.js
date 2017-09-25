@@ -13,6 +13,26 @@ const data = [
     Name: 'Marco',
     Lastname: 'D\'Alessandro',
     Avatar: 'http://placehold.it/75'    
+  },
+  {
+    Name: 'Pippo',
+    Lastname: 'Doe',
+    Avatar: 'http://placehold.it/75'    
+  },
+  {
+    Name: 'Pluto',
+    Lastname: 'Plutone',
+    Avatar: 'http://placehold.it/75'    
+  },
+  {
+    Name: 'Paperino',
+    Lastname: 'Doe',
+    Avatar: 'http://placehold.it/75'    
+  },
+  {
+    Name: 'Paperone',
+    Lastname: 'Doe',
+    Avatar: 'http://placehold.it/75'    
   }
 ]
 
@@ -71,11 +91,11 @@ class Form extends React.Component {
    this.shuffle.filter(function (element, shuffle) {
     
         // If there is a current filter applied, ignore elements that don't match it.
-        
+        debugger;
         var titleElement = element.querySelector('.people-name');
         var titleText = titleElement.textContent.toLowerCase().trim();
     
-        return titleText.indexOf(this.state.value) !== -1;
+        return titleText.indexOf((this.state.value).toLowerCase()) !== -1;
       }.bind(this));
   }
 
@@ -103,7 +123,6 @@ class App extends Component {
     this.state = {
       cards : data
     }
-    this.pippo = 'ciao';
   }
   
 
